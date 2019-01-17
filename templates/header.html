@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% assets "js_all" %}
+<script type="text/javascript" src="{{ ASSET_URL }}"></script>
+{% endassets %} {% assets "css_all" %}
+<link rel=stylesheet type="text/css" href="{{ ASSET_URL }}"> {% endassets %}
+<style>
+    header .branding {
+        display: flex;
+        align-items: center;
+    }
+</style>
+<html lang="en">
+
+<head>
+    <title>
+        Python-Flask Clarity Example
+    </title>
+</head>
+
+<header class="header-6">
+    <div class="branding">
+        <clr-icon shape="vm"></clr-icon>
+        <span class="title">Py-Clarity</span>
+    </div>
+    <div class="header-nav">
+            <a href="/" class="nav-link nav-text">Home</a>
+            <a href="/vms" class="nav-link nav-text">VM List</a>
+            <a href="/workflows" class="nav-link nav-text">vRO Workflow List</a>
+    </div>
+</header>
+<body>
+    {% block body %}{% endblock %}
+</body>
+</html>
