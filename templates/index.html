@@ -1,42 +1,36 @@
- {% extends "header.html" %} {% block body %}
-<div class="login-wrapper">
-    <form class="login" id="loginform", method="POST">
-        <label class="title">
-            {%if session['logged_in']==True%}
-                <div class="alert alert-success">
-                    <div class="alert-item">
+{% extends "header.html" %} {% block body %}
+    <div class="login-wrapper">
+        <form class="login" id="distanceFrorm" method="POST">
+            <label class="title">
+                {% if distance %}
+                    <div class="alert alert-success">
+                        <div class="alert-item">
                         <span>
-                            Already Logged In
+                            The distance is {{ distance }} km
                         </span>
+                        </div>
                     </div>
+                {% endif %}
+                <h3 class="welcome">Get GPS distance</h3>
+                Using SOAP WebService
+            </label>
+            <div class="login-group">
+                <div>
+                    Start point
                 </div>
-            {% endif %}
-            <h3 class="welcome">ClarityUI and Python Example</h3>
-            Using Python and Flask
-        </label>
-        <div class="login-group">
-            {%if session['logged_in']==True%}
-            <input class="username" type="text" name="username" placeholder="Username" disabled>
-            <input class="password" type="password" name="password" placeholder="Password" disabled>
-            {% else %}
-            <input class="username" type="text" name="username" placeholder="Username" value="{{ request.form.username }}">
-            <input class="password" type="password" name="password" placeholder="Password" value="{{ request.form.password }}">
-            {% endif %}
-            {% if session['wrong_pass']==True %}
-            <div class="error active">
-                Invalid user name or password
+                <input type="text" name="latitude_from" placeholder="Latitude from"
+                       value="{{ request.form.latitude_from }}">
+                <input type="text" name="longitude_from" placeholder="Longitude from"
+                       value="{{ request.form.longitude_from }}">
+                <div>
+                    Destination
+                </div>
+                <input type="text" name="latitude_to" placeholder="Latitude To"
+                       value="{{ request.form.latitude_to }}">
+                <input type="text" name="longitude_to" placeholder="Longitude To"
+                       value="{{ request.form.longitude_to }}">
+                <button type="submit" class="btn btn-primary">Next</button>
             </div>
-            {% else %}
-            <div>
-                Enter Username and Password
-            </div>
-            {% endif %}
-            {%if session['logged_in']==True%}
-                <button type="submit" class="btn btn-primary" disabled>NEXT</button>
-            {%else%}
-                <button type="submit" class="btn btn-primary">NEXT</button>
-            {%endif%}
-        </div>
-    </form>
-</div>
+        </form>
+    </div>
 {% endblock %}  
