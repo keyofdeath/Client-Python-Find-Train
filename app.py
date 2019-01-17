@@ -1,7 +1,5 @@
 from flask import Flask, render_template, redirect, request, url_for, jsonify, session
 from flask_assets import Bundle, Environment
-import requests
-from base64 import b64encode
 
 app = Flask(__name__)
 app.secret_key = "super secret key"
@@ -33,23 +31,13 @@ def homepage():
 
 
 @app.route('/vms')
-def vmlist():
-    req = requests.get('https://pyva.humblelab.com/rest/vcenter/vms')
-    req_json = req.json()
-    return render_template('vms.html', vms = req_json)
+def vms():
+    return "<h1> VMS </h1>"
 
 
 @app.route('/workflows')
-def workflows():
-    url = 'https://hlcloud.humblelab.com'
-    value = b64encode(b"username:password").decode("ascii")
-    headers = {
-        'Authorization': 'Basic '+ value,
-        'content-type': 'application/json',
-        'accept' : 'application/json' 
-    }
-    req = requests.get('{}/vco/api/workflows/'.format(url), verify=False, headers=headers)
-    return render_template('workflows.html', flows=req.json()['link'])
+def vms():
+    return "<h1> workflows </h1>"
 
 
 if __name__ == '__main__':
