@@ -1,3 +1,4 @@
+requests
 Flask-Assets==0.12
 click==6.7
 Flask==1.0.2

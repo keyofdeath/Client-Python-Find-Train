@@ -36,7 +36,3 @@ def homepage():
                         "departures": departure_result["departures"]}
         return render_template('index.html', informations=out_put_json)
     return render_template('index.html')
-
-
-# if __name__ == '__main__':
-#     app.run(debug=True)
