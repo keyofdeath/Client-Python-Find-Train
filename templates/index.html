@@ -1,22 +1,25 @@
 {% extends "header.html" %} {% block body %}
     <div class="login-wrapper" style="max-width: 100%">
         <form class="login" id="distanceFrorm" method="POST">
-            <label class="title">
-                {% if informations %}
+            {% if informations %}
 
-                    <h1>{{ informations.start }} TO {{ informations.end }}</h1>
-                    <h1>{{ informations.distance }}KM for {{ informations.price }}$</h1>
-                    <ol class="list">
-                        {% for departure in informations.departures %}
-                            <li>{{ departure }}</li><br>
-                        {% endfor %}
-                    </ol>
+                <h3>Gare de dépare {{ informations.start }}</h3><br>
+                <h3>Gare arrivée {{ informations.end }}</h3><br>
+                <h4>Distance: {{ informations.distance }}KM</h4>
+                <h4>Prix: {{ informations.price }}€</h4><br>
+                <h3>Heure de départs possible:</h3>
+                <ul class="list">
+                    {% for departure in informations.departures %}
+                        <li>{{ departure }}</li><br>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <label class="title">
+                    Entrer la gare de départ est la gare d'arrivée.
+                    Puis L'heure de votre départ
+                </label>
+            {% endif %}
 
-
-                {% endif %}
-                <h3 class="welcome">Get GPS distance</h3>
-                Using SOAP WebService
-            </label>
             <div class="login-group">
                 <div>
                     Start point
