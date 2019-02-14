@@ -1,9 +1,9 @@
 from flask import Flask, render_template, redirect, request, url_for, jsonify, session
 from flask_assets import Bundle, Environment
 from zeep import Client
+from sncf_api import get_departures_time
 
 app = Flask(__name__)
-app.secret_key = "super secret key"
 
 env = Environment(app)
 js = Bundle('js/clarity-icons.min.js', 'js/clarity-icons-api.js',
@@ -11,31 +11,29 @@ js = Bundle('js/clarity-icons.min.js', 'js/clarity-icons-api.js',
 env.register('js_all', js)
 css = Bundle('css/clarity-ui.min.css', 'css/clarity-icons.min.css')
 env.register('css_all', css)
-soap_client = Client('http://no-code-team:8080/Service_distance_war6475660720881532110/services/GpsDistance?wsdl')
+soap_client = Client('http://no-code-team:8080/Service_distance_war6259465320061807253/services/GpsDistance?wsdl')
 
 
 @app.route('/', methods=["GET", "POST"])
 def homepage():
     if request.method == "POST":
-        latitude_from = request.form["latitude_from"]
-        longitude_from = request.form["longitude_from"]
-        latitude_to = request.form["latitude_to"]
-        longitude_to = request.form["longitude_to"]
-
-        distance = soap_client.service.getGPSDistance(latitude_from, longitude_from, latitude_to, longitude_to)
-        return render_template('index.html', distance=distance)
+        start_station = request.form["start"]
+        destination_station = request.form["destination"]
+        date_departure = request.form["departure_time"].replace('T', ' ')
+        departure_result = get_departures_time(start_station, destination_station, date_departure)
+        if departure_result is None:
+            return render_template('index.html')
+        latitude_from = departure_result["lat_start"]
+        longitude_from = departure_result["lon_start"]
+        latitude_to = departure_result["lat_end"]
+        longitude_to = departure_result["lon_end"]
+        distance = round(soap_client.service.getGPSDistance(latitude_from, longitude_from, latitude_to, longitude_to), 2)
+        price = round(soap_client.service.getPrice(distance, 6), 2)
+        out_put_json = {"start": departure_result["station_start_name"],
+                        "end": departure_result["station_end_name"], "distance": distance, "price": price,
+                        "departures": departure_result["departures"]}
+        return render_template('index.html', informations=out_put_json)
     return render_template('index.html')
 
-
-# @app.route('/vms')
-# def vms():
-#     return "<h1> VMS </h1>"
-#
-#
-# @app.route('/workflows')
-# def vms():
-#     return "<h1> workflows </h1>"
-
-
-if __name__ == '__main__':
-    app.run(debug=True)
+# if __name__ == '__main__':
+#     app.run(debug=True)
