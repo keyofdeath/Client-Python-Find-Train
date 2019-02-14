@@ -6,7 +6,8 @@ from __future__ import absolute_import
 import json
 import logging.handlers
 import os
-from datetime import datetime, timedelta
+from datetime import datetime
+
 import requests
 
 PYTHON_LOGGER = logging.getLogger(__name__)
@@ -25,11 +26,18 @@ PYTHON_LOGGER.setLevel(logging.DEBUG)
 # Absolute path to the folder location of this python file
 FOLDER_ABSOLUTE_PATH = os.path.normpath(os.path.dirname(os.path.abspath(__file__)))
 
+# Sncf api token
 TOKEN = '84f17708-373d-4da1-b728-233be34f2336'
+# Abs path to the stations
 STATIONS_DB = os.path.join(FOLDER_ABSOLUTE_PATH, "french_stations.json")
 
 
 def stations_pages(page_number):
+    """
+    Get all stations information
+    :param page_number: (int) page number
+    :return: (request) request of the page
+    """
     return requests.get('https://api.sncf.com/v1/coverage/sncf/stop_areas?start_page={}'.format(page_number),
                         auth=(TOKEN, ''))
 
@@ -38,7 +46,7 @@ def api_date_to_python_date(api_date):
     """
     Convert the api string date to python date
     Y-m-d H-M-S
-    :param api_date: (string)
+    :param api_date: (string) date to convert
     :return: (datetime)
     """
     return datetime.strptime(api_date.replace('T', ''), '%Y%m%d%H%M%S')
@@ -46,17 +54,16 @@ def api_date_to_python_date(api_date):
 
 def python_date_to_api_date(python_date):
     """
-
-    :param python_date: (datetime)
-    :return:
+    Convert a python date to the api date format
+    :param python_date: (datetime) date to convert
+    :return: (string) Reformat date
     """
     return datetime.strftime(python_date, '%Y%m%dT%H%M%S')
 
 
 def get_all_station():
     """
-
-    :return:
+    Generate a json file with all the stations and informations
     """
     page_initiale = stations_pages(0)
     item_per_page = page_initiale.json()['pagination']['items_per_page']
@@ -103,9 +110,9 @@ def get_all_station():
 
 def found_station(station_name):
     """
-
-    :param station_name:
-    :return:
+    Found a sation corespoding with the input name
+    :param station_name: (string) name of the station to found
+    :return:(list of string) Names of all the station match with the input name
     """
     station_name = station_name.strip().lower().replace(' ', '-')
     with open(STATIONS_DB) as db_json:
@@ -127,7 +134,14 @@ def get_departures_time(station_start, station_end, date):
     :param station_start: (string) Name of the start station
     :param station_end: (string) Name of the destination station
     :param date: (string) YYYY-MM-DD HH:MM date and time you want to go
-    :return: (dic) {
+    :return: (dic) {"departures": list of all the departures houre,
+                    "lat_end": Latitiude of the station end,
+                    "lon_end": Longitude of the station end,
+                    "lat_start": Latitiude of the station start,
+                    "lon_start": Longitude of the station start,
+                    "station_start_name": Name of the station found,
+                    "station_end_name": Name of the station found
+
     """
     # set the date time to the api format YYYMMDDTHHMMSS
     date = date.replace('-', '').replace(' ', 'T').replace(':', '') + '00'

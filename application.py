@@ -1,6 +1,7 @@
-from flask import Flask, render_template, redirect, request, url_for, jsonify, session
+from flask import Flask, render_template, request
 from flask_assets import Bundle, Environment
 from zeep import Client
+
 from sncf_api import get_departures_time
 
 app = Flask(__name__)
@@ -27,7 +28,8 @@ def homepage():
         longitude_from = departure_result["lon_start"]
         latitude_to = departure_result["lat_end"]
         longitude_to = departure_result["lon_end"]
-        distance = round(soap_client.service.getGPSDistance(latitude_from, longitude_from, latitude_to, longitude_to), 2)
+        distance = round(soap_client.service.getGPSDistance(latitude_from, longitude_from, latitude_to, longitude_to),
+                         2)
         price = round(soap_client.service.getPrice(distance, 6), 2)
         out_put_json = {"start": departure_result["station_start_name"],
                         "end": departure_result["station_end_name"], "distance": distance, "price": price,
