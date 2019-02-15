@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 from flask_assets import Bundle, Environment
 from zeep import Client
 
-from sncf_api import get_departures_time
+from sncf_api import get_departures_time, found_station
 
 app = Flask(__name__)
 
@@ -18,8 +18,15 @@ soap_client = Client('http://40.89.190.93/Service_distance_war/services/GpsDista
 @app.route('/', methods=["GET", "POST"])
 def homepage():
     if request.method == "POST":
-        start_station = request.form["start"]
-        destination_station = request.form["destination"]
+        if "select_station" in request.form:
+            start_station = request.form["start"]
+            destination_station = request.form["destination"]
+            stations_found_start = found_station(start_station)
+            stations_found_end = found_station(destination_station)
+            return render_template('index.html', gare_list={"start": stations_found_start, "end": stations_found_end})
+
+        start_station = request.form["station_start"]
+        destination_station = request.form["station_end"]
         date_departure = request.form["departure_time"].replace('T', ' ')
         departure_result = get_departures_time(start_station, destination_station, date_departure)
         if departure_result is None:
