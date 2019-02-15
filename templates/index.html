@@ -13,16 +13,11 @@
                         <li>{{ departure }}</li><br>
                     {% endfor %}
                 </ul>
-            {% else %}
-                <label class="title">
-                    Entrer la gare de départ est la gare d'arrivée.
-                    Puis L'heure de votre départ
-                </label>
             {% endif %}
 
             {% if gare_list %}
 
-                <label>
+                <label class="select">
                     Selectioner votre gare de départ
                     <select name="station_start">
                         {% for station in gare_list["start"] %}
@@ -31,7 +26,7 @@
                     </select>
                 </label><br>
 
-                <label>
+                <label class="select">
                     Selectioner votre gare d'arrivée
                     <select name="station_end">
                         {% for station in gare_list["end"] %}
@@ -49,6 +44,10 @@
                         value="{{ request.form.found_houres }}">Search
                 </button>
             {% else %}
+                <label class="title">
+                    Entrer la gare de départ est la gare d'arrivée.
+                    Puis L'heure de votre départ
+                </label>
                 <div class="login-group">
                     <div>
                         Start point
