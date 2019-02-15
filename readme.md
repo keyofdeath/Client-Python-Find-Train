@@ -42,3 +42,7 @@ Le fichier json générer sera `french_stations.json`
 ## Changer le token SNCF
 
 Vous pouvez changer le token de L'api SNCF dans le fichier `sncf_api.py` constante `TOKEN`
+
+## Git API REST information sur la ville
+
+https://github.com/keyofdeath/info-sur-ville.git
