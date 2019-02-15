@@ -20,25 +20,52 @@
                 </label>
             {% endif %}
 
-            <div class="login-group">
-                <div>
-                    Start point
-                </div>
-                <input type="text" name="start" placeholder="Start station"
-                       value="{{ request.form.start }}">
-                <div>
-                    Destination
-                </div>
-                <input type="text" name="destination" placeholder="Destination"
-                       value="{{ request.form.destination }}">
+            {% if gare_list %}
+
+                <label>
+                    Selectioner votre gare de départ
+                    <select name="station_start">
+                        {% for station in gare_list["start"] %}
+                            <option value="{{ station["label"] }}">{{ station["label"] }}</option>
+                        {% endfor %}
+                    </select>
+                </label><br>
+
+                <label>
+                    Selectioner votre gare d'arrivée
+                    <select name="station_end">
+                        {% for station in gare_list["end"] %}
+                            <option value="{{ station["label"] }}">{{ station["label"] }}</option>
+                        {% endfor %}
+                    </select>
+                </label>
                 <div>
                     Date
                 </div>
                 <label>
                     <input type="datetime-local" name="departure_time" value="{{ request.form.departure_time }}">
                 </label>
-                <button type="submit" class="btn btn-primary">Next</button>
-            </div>
+                <button type="submit" class="btn btn-primary" name="found_houres"
+                        value="{{ request.form.found_houres }}">Search
+                </button>
+            {% else %}
+                <div class="login-group">
+                    <div>
+                        Start point
+                    </div>
+                    <input type="text" name="start" placeholder="Start station"
+                           value="{{ request.form.start }}">
+                    <div>
+                        Destination
+                    </div>
+                    <input type="text" name="destination" placeholder="Destination"
+                           value="{{ request.form.destination }}">
+                    <button type="submit" class="btn btn-primary" name="select_station"
+                            value="{{ request.form.select_station }}">Next
+                    </button>
+                </div>
+
+            {% endif %}
         </form>
     </div>
-{% endblock %}  
+{% endblock %}

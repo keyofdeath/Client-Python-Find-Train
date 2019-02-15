@@ -114,7 +114,7 @@ def found_station(station_name):
     :param station_name: (string) name of the station to found
     :return:(list of string) Names of all the station match with the input name
     """
-    station_name = station_name.strip().lower().replace(' ', '-')
+    station_name_reformat = station_name.strip().lower().replace(' ', '-')
     with open(STATIONS_DB) as db_json:
         json_stations = json.load(db_json)
 
@@ -122,8 +122,10 @@ def found_station(station_name):
     for station in json_stations:
         town = station["label"][station["label"].find('(') + 1:station["label"].find(')')].lower().strip()
         station_name_get = station["label"][:station["label"].find('(')].lower().strip()
+        if station["label"] == station_name:
+            return [station]
         # Look if we have the exact match
-        if station_name in town or station_name in station_name_get:
+        elif station_name_reformat in town or station_name_reformat in station_name_get:
             all_stations_result.append(station)
     return all_stations_result
 
