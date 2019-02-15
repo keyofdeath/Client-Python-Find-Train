@@ -13,6 +13,10 @@
                         <li>{{ departure }}</li><br>
                     {% endfor %}
                 </ul>
+                {% if informations.town_info != "" %}
+                    <h3>Information sur la ville de destination</h3>
+                    <p>{{ informations.town_info }}</p>
+                {% endif %}
             {% endif %}
 
             {% if gare_list %}
@@ -39,7 +43,11 @@
                 </div>
                 <label>
                     <input type="datetime-local" name="departure_time" value="{{ request.form.departure_time }}">
-                </label>
+                </label><br>
+                <div class="checkbox">
+                    <input type="checkbox" id="town_info" name="town_info">
+                    <label for="town_info">Tu veut des info sur ta destination ?</label>
+                </div>
                 <button type="submit" class="btn btn-primary" name="found_houres"
                         value="{{ request.form.found_houres }}">GO
                 </button>
@@ -67,4 +75,7 @@
             {% endif %}
         </form>
     </div>
+    <script>
+
+    </script>
 {% endblock %}

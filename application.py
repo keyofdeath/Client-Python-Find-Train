@@ -1,3 +1,6 @@
+import json
+
+import requests
 from flask import Flask, render_template, request
 from flask_assets import Bundle, Environment
 from zeep import Client
@@ -16,6 +19,27 @@ env.register('css_all', css)
 # Soap client
 soap_client = Client('http://40.89.190.93/Service_distance_war/services/GpsDistance?wsdl')
 
+SERVER_IP = "town-info.azurewebsites.net"
+
+
+def get_town_information(town_name):
+    """
+
+    :param town_name:
+    :return:
+    """
+    try:
+        town = town_name[town_name.find('(') + 1:town_name.find(')')].lower().strip()
+    except Exception:
+        town = town_name
+    responce = requests.post("http://{}".format(SERVER_IP),
+                             data=json.dumps({"wikipedia": town}),
+                             headers={'Content-type': 'application/json'})
+    try:
+        return responce.json()["summary"]
+    except KeyError:
+        return "Information non trouver"
+
 
 @app.route('/', methods=["GET", "POST"])
 def homepage():
@@ -27,6 +51,9 @@ def homepage():
             stations_found_start = found_station(start_station)
             stations_found_end = found_station(destination_station)
             return render_template('index.html', gare_list={"start": stations_found_start, "end": stations_found_end})
+        elif "info_city" in request.form:
+            nom = request.form["info_city"]
+            return render_template('index.html', town_info=nom)
 
         # If he select the final station name
         start_station = request.form["station_start"]
@@ -44,8 +71,17 @@ def homepage():
                          2)
         # Get the price
         price = round(soap_client.service.getPrice(distance, 6), 2)
+        if request.form.getlist('town_info'):
+            town_info = get_town_information(destination_station)
+        else:
+            town_info = ""
         out_put_json = {"start": departure_result["station_start_name"],
                         "end": departure_result["station_end_name"], "distance": distance, "price": price,
-                        "departures": departure_result["departures"]}
+                        "departures": departure_result["departures"],
+                        "town_info": town_info}
         return render_template('index.html', informations=out_put_json)
     return render_template('index.html')
+
+
+if __name__ == "__main__":
+    app.run(host='127.0.0.1', port=5050)
