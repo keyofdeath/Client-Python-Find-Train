@@ -41,7 +41,7 @@
                     <input type="datetime-local" name="departure_time" value="{{ request.form.departure_time }}">
                 </label>
                 <button type="submit" class="btn btn-primary" name="found_houres"
-                        value="{{ request.form.found_houres }}">Search
+                        value="{{ request.form.found_houres }}">GO
                 </button>
             {% else %}
                 <label class="title">
@@ -50,7 +50,7 @@
                 </label>
                 <div class="login-group">
                     <div>
-                        Start point
+                        Départ
                     </div>
                     <input type="text" name="start" placeholder="Start station"
                            value="{{ request.form.start }}">
@@ -60,7 +60,7 @@
                     <input type="text" name="destination" placeholder="Destination"
                            value="{{ request.form.destination }}">
                     <button type="submit" class="btn btn-primary" name="select_station"
-                            value="{{ request.form.select_station }}">Next
+                            value="{{ request.form.select_station }}">GO
                     </button>
                 </div>
 

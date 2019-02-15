@@ -12,12 +12,15 @@ js = Bundle('js/clarity-icons.min.js', 'js/clarity-icons-api.js',
 env.register('js_all', js)
 css = Bundle('css/clarity-ui.min.css', 'css/clarity-icons.min.css', 'css/overwrite.css')
 env.register('css_all', css)
+
+# Soap client
 soap_client = Client('http://40.89.190.93/Service_distance_war/services/GpsDistance?wsdl')
 
 
 @app.route('/', methods=["GET", "POST"])
 def homepage():
     if request.method == "POST":
+        # If he enter the station name
         if "select_station" in request.form:
             start_station = request.form["start"]
             destination_station = request.form["destination"]
@@ -25,6 +28,7 @@ def homepage():
             stations_found_end = found_station(destination_station)
             return render_template('index.html', gare_list={"start": stations_found_start, "end": stations_found_end})
 
+        # If he select the final station name
         start_station = request.form["station_start"]
         destination_station = request.form["station_end"]
         date_departure = request.form["departure_time"].replace('T', ' ')
@@ -35,8 +39,10 @@ def homepage():
         longitude_from = departure_result["lon_start"]
         latitude_to = departure_result["lat_end"]
         longitude_to = departure_result["lon_end"]
+        # Get the distance with the soap
         distance = round(soap_client.service.getGPSDistance(latitude_from, longitude_from, latitude_to, longitude_to),
                          2)
+        # Get the price
         price = round(soap_client.service.getPrice(distance, 6), 2)
         out_put_json = {"start": departure_result["station_start_name"],
                         "end": departure_result["station_end_name"], "distance": distance, "price": price,

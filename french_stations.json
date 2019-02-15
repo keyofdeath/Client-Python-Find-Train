@@ -8,6 +8,19 @@
     "timezone": "Europe/Paris"
   },
   {
+    "id": "stop_area:OCE:SA:87338590",
+    "id_region": "admin:fr:06104",
+    "insee": "06104",
+    "label": " (Roquebrune-Cap-Martin)",
+    "label_region": "Roquebrune-Cap-Martin (06190)",
+    "lat": "43.752284",
+    "lon": "7.441389",
+    "name": "",
+    "region": "Roquebrune-Cap-Martin",
+    "timezone": "Europe/Paris",
+    "zip_code": "06190"
+  },
+  {
     "id": "stop_area:OCE:SA:87443937",
     "id_region": "admin:fr:09103",
     "insee": "09103",
@@ -21,164 +34,12 @@
     "zip_code": "09120"
   },
   {
-    "id": "stop_area:OCE:SA:87716449",
-    "label": "",
-    "lat": "0",
-    "lon": "0",
-    "name": "",
-    "timezone": "Europe/Paris"
-  },
-  {
-    "id": "stop_area:OCE:SA:87716456",
-    "label": "",
-    "lat": "0",
-    "lon": "0",
-    "name": "",
-    "timezone": "Europe/Paris"
-  },
-  {
-    "id": "stop_area:OCE:SA:87716464",
-    "label": "",
-    "lat": "0",
-    "lon": "0",
-    "name": "",
-    "timezone": "Europe/Paris"
-  },
-  {
-    "id": "stop_area:OCE:SA:87716472",
-    "label": "",
-    "lat": "0",
-    "lon": "0",
-    "name": "",
-    "timezone": "Europe/Paris"
-  },
-  {
-    "id": "stop_area:OCE:SA:87716696",
-    "label": "",
-    "lat": "0",
-    "lon": "0",
-    "name": "",
-    "timezone": "Europe/Paris"
-  },
-  {
-    "id": "stop_area:OCE:SA:87716811",
-    "label": "",
-    "lat": "0",
-    "lon": "0",
-    "name": "",
-    "timezone": "Europe/Paris"
-  },
-  {
     "id": "stop_area:OCE:SA:87716829",
     "label": "",
     "lat": "0",
     "lon": "0",
     "name": "",
     "timezone": "Europe/Paris"
-  },
-  {
-    "id": "stop_area:OCE:SA:85001206",
-    "id_region": "admin:osm:1685594",
-    "insee": "",
-    "label": ". (Court\u00e9telle)",
-    "label_region": "Court\u00e9telle",
-    "lat": "47.342912",
-    "lon": "7.317941",
-    "name": ".",
-    "region": "Court\u00e9telle",
-    "timezone": "Europe/Paris",
-    "zip_code": ""
-  },
-  {
-    "id": "stop_area:OCE:SA:85001214",
-    "id_region": "admin:osm:2759181",
-    "insee": "",
-    "label": ". (Haute-Sorne)",
-    "label_region": "Haute-Sorne",
-    "lat": "47.335404",
-    "lon": "7.291731",
-    "name": ".",
-    "region": "Haute-Sorne",
-    "timezone": "Europe/Paris",
-    "zip_code": ""
-  },
-  {
-    "id": "stop_area:OCE:SA:85001222",
-    "id_region": "admin:osm:2759181",
-    "insee": "",
-    "label": ". (Haute-Sorne)",
-    "label_region": "Haute-Sorne",
-    "lat": "47.336773",
-    "lon": "7.246805",
-    "name": ".",
-    "region": "Haute-Sorne",
-    "timezone": "Europe/Paris",
-    "zip_code": ""
-  },
-  {
-    "id": "stop_area:OCE:SA:85001248",
-    "id_region": "admin:osm:1685583",
-    "insee": "",
-    "label": ". (Clos du Doubs)",
-    "label_region": "Clos du Doubs (2882)",
-    "lat": "47.367777",
-    "lon": "7.165953",
-    "name": ".",
-    "region": "Clos du Doubs",
-    "timezone": "Europe/Paris",
-    "zip_code": "2882"
-  },
-  {
-    "id": "stop_area:OCE:SA:85001255",
-    "id_region": "admin:osm:1685590",
-    "insee": "",
-    "label": ". (Courgenay)",
-    "label_region": "Courgenay (2950)",
-    "lat": "47.404904",
-    "lon": "7.124198",
-    "name": ".",
-    "region": "Courgenay",
-    "timezone": "Europe/Paris",
-    "zip_code": "2950"
-  },
-  {
-    "id": "stop_area:OCE:SA:85001271",
-    "id_region": "admin:osm:1685570",
-    "insee": "",
-    "label": ". (Basse-Allaine)",
-    "label_region": "Basse-Allaine",
-    "lat": "47.456237",
-    "lon": "7.055432",
-    "name": ".",
-    "region": "Basse-Allaine",
-    "timezone": "Europe/Paris",
-    "zip_code": ""
-  },
-  {
-    "id": "stop_area:OCE:SA:85001412",
-    "id_region": "admin:osm:1685588",
-    "insee": "",
-    "label": ". (Courchavon)",
-    "label_region": "Courchavon",
-    "lat": "47.439839",
-    "lon": "7.057592",
-    "name": ".",
-    "region": "Courchavon",
-    "timezone": "Europe/Paris",
-    "zip_code": ""
-  },
-  {
-    "id": "stop_area:OCE:SA:85001446",
-    "id_region": "admin:osm:1685570",
-    "insee": "",
-    "label": ". (Basse-Allaine)",
-    "label_region": "Basse-Allaine",
-    "lat": "47.479561",
-    "lon": "7.030052",
-    "name": ".",
-    "region": "Basse-Allaine",
-    "timezone": "Europe/Paris",
-    "zip_code": ""
   },
   {
     "id": "stop_area:OCE:SA:80153452",
@@ -3887,6 +3748,32 @@
     "zip_code": "75001;75116"
   },
   {
+    "id": "stop_area:OCE:SA:87304691",
+    "id_region": "admin:fr:36195",
+    "insee": "36195",
+    "label": "Avail (Saint-Georges-sur-Arnon)",
+    "label_region": "Saint-Georges-sur-Arnon (36100)",
+    "lat": "46.964071",
+    "lon": "2.058504",
+    "name": "Avail",
+    "region": "Saint-Georges-sur-Arnon",
+    "timezone": "Europe/Paris",
+    "zip_code": "36100"
+  },
+  {
+    "id": "stop_area:OCE:SA:87689422",
+    "id_region": "admin:fr:36195",
+    "insee": "36195",
+    "label": "Avail-Halte (Saint-Georges-sur-Arnon)",
+    "label_region": "Saint-Georges-sur-Arnon (36100)",
+    "lat": "46.968185",
+    "lon": "2.04517",
+    "name": "Avail-Halte",
+    "region": "Saint-Georges-sur-Arnon",
+    "timezone": "Europe/Paris",
+    "zip_code": "36100"
+  },
+  {
     "id": "stop_area:OCE:SA:87683789",
     "id_region": "admin:fr:89025",
     "insee": "89025",
@@ -4610,6 +4497,19 @@
     "zip_code": "42510"
   },
   {
+    "id": "stop_area:OCE:SA:87698399",
+    "id_region": "admin:fr:42011",
+    "insee": "42011",
+    "label": "Balbigny Gare Routi\u00e8re (Balbigny)",
+    "label_region": "Balbigny (42510)",
+    "lat": "45.817745",
+    "lon": "4.187394",
+    "name": "Balbigny Gare Routi\u00e8re",
+    "region": "Balbigny",
+    "timezone": "Europe/Paris",
+    "zip_code": "42510"
+  },
+  {
     "id": "stop_area:OCE:SA:87571604",
     "id_region": "admin:fr:37018",
     "insee": "37018",
@@ -5245,6 +5145,19 @@
     "zip_code": "57970"
   },
   {
+    "id": "stop_area:OCE:SA:85001222",
+    "id_region": "admin:osm:2759181",
+    "insee": "",
+    "label": "Bassecourt (Haute-Sorne)",
+    "label_region": "Haute-Sorne",
+    "lat": "47.336773",
+    "lon": "7.246805",
+    "name": "Bassecourt",
+    "region": "Haute-Sorne",
+    "timezone": "Europe/Paris",
+    "zip_code": ""
+  },
+  {
     "id": "stop_area:OCE:SA:87581850",
     "id_region": "admin:fr:33032",
     "insee": "33032",
@@ -5498,19 +5411,6 @@
     "region": "Bazi\u00e8ge",
     "timezone": "Europe/Paris",
     "zip_code": "31450"
-  },
-  {
-    "id": "stop_area:OCE:SA:87171348",
-    "id_region": "admin:fr:02054",
-    "insee": "02054",
-    "label": "Bazoches (Bazoches-sur-Vesles)",
-    "label_region": "Bazoches-sur-Vesles (02220)",
-    "lat": "49.305272",
-    "lon": "3.613274",
-    "name": "Bazoches",
-    "region": "Bazoches-sur-Vesles",
-    "timezone": "Europe/Paris",
-    "zip_code": "02220"
   },
   {
     "id": "stop_area:OCE:SA:87668582",
@@ -6733,6 +6633,14 @@
     "region": "Biffontaine",
     "timezone": "Europe/Paris",
     "zip_code": "88430"
+  },
+  {
+    "id": "stop_area:OCE:SA:87716456",
+    "label": "Biffontaine Mairie",
+    "lat": "0",
+    "lon": "0",
+    "name": "Biffontaine Mairie",
+    "timezone": "Europe/Paris"
   },
   {
     "id": "stop_area:OCE:SA:87582478",
@@ -8148,12 +8056,38 @@
     "zip_code": "18000"
   },
   {
+    "id": "stop_area:OCE:SA:87465690",
+    "id_region": "admin:fr:18033",
+    "insee": "18033",
+    "label": "Bourges-A\u00e9roport (Bourges)",
+    "label_region": "Bourges (18000)",
+    "lat": "47.062301",
+    "lon": "2.365804",
+    "name": "Bourges-A\u00e9roport",
+    "region": "Bourges",
+    "timezone": "Europe/Paris",
+    "zip_code": "18000"
+  },
+  {
     "id": "stop_area:OCE:SA:87454249",
     "label": "Bourges-Gare-Routi\u00e8re",
     "lat": "0",
     "lon": "0",
     "name": "Bourges-Gare-Routi\u00e8re",
     "timezone": "Europe/Paris"
+  },
+  {
+    "id": "stop_area:OCE:SA:87643734",
+    "id_region": "admin:fr:18033",
+    "insee": "18033",
+    "label": "Bourges-Place-Nation (Bourges)",
+    "label_region": "Bourges (18000)",
+    "lat": "47.084188",
+    "lon": "2.391274",
+    "name": "Bourges-Place-Nation",
+    "region": "Bourges",
+    "timezone": "Europe/Paris",
+    "zip_code": "18000"
   },
   {
     "id": "stop_area:OCE:SA:87481242",
@@ -9311,6 +9245,14 @@
     "zip_code": "88600"
   },
   {
+    "id": "stop_area:OCE:SA:87716464",
+    "label": "Bruy\u00e8res Chanzy Gare",
+    "lat": "0",
+    "lon": "0",
+    "name": "Bruy\u00e8res Chanzy Gare",
+    "timezone": "Europe/Paris"
+  },
+  {
     "id": "stop_area:OCE:SA:87276451",
     "id_region": "admin:fr:95116",
     "insee": "95116",
@@ -9491,6 +9433,19 @@
     "region": "Buire-sur-l'Ancre",
     "timezone": "Europe/Paris",
     "zip_code": "80300"
+  },
+  {
+    "id": "stop_area:OCE:SA:85001446",
+    "id_region": "admin:osm:1685570",
+    "insee": "",
+    "label": "Buix (Basse-Allaine)",
+    "label_region": "Basse-Allaine",
+    "lat": "47.479561",
+    "lon": "7.030052",
+    "name": "Buix",
+    "region": "Basse-Allaine",
+    "timezone": "Europe/Paris",
+    "zip_code": ""
   },
   {
     "id": "stop_area:OCE:SA:87141739",
@@ -12344,6 +12299,32 @@
     "zip_code": "71120"
   },
   {
+    "id": "stop_area:OCE:SA:87643759",
+    "id_region": "admin:fr:18055",
+    "insee": "18055",
+    "label": "Charost-Pont (Ch\u00e2rost)",
+    "label_region": "Ch\u00e2rost (18290)",
+    "lat": "46.992477",
+    "lon": "2.123557",
+    "name": "Charost-Pont",
+    "region": "Ch\u00e2rost",
+    "timezone": "Europe/Paris",
+    "zip_code": "18290"
+  },
+  {
+    "id": "stop_area:OCE:SA:87304659",
+    "id_region": "admin:fr:18055",
+    "insee": "18055",
+    "label": "Charost-caf\u00e9-du-Centre (Ch\u00e2rost)",
+    "label_region": "Ch\u00e2rost (18290)",
+    "lat": "46.992768",
+    "lon": "2.115825",
+    "name": "Charost-caf\u00e9-du-Centre",
+    "region": "Ch\u00e2rost",
+    "timezone": "Europe/Paris",
+    "zip_code": "18290"
+  },
+  {
     "id": "stop_area:OCE:SA:87381194",
     "id_region": "admin:fr:95142",
     "insee": "95142",
@@ -13829,6 +13810,19 @@
     "zip_code": "80210"
   },
   {
+    "id": "stop_area:OCE:SA:87317727",
+    "id_region": "admin:fr:18064",
+    "insee": "18064",
+    "label": "Ch\u00e9ry-Centre (Ch\u00e9ry)",
+    "label_region": "Ch\u00e9ry (18120)",
+    "lat": "47.120781",
+    "lon": "2.046727",
+    "name": "Ch\u00e9ry-Centre",
+    "region": "Ch\u00e9ry",
+    "timezone": "Europe/Paris",
+    "zip_code": "18120"
+  },
+  {
     "id": "stop_area:OCE:SA:87297226",
     "id_region": "admin:fr:02181",
     "insee": "02181",
@@ -13970,6 +13964,19 @@
     "region": "Paris",
     "timezone": "Europe/Paris",
     "zip_code": "75001;75116"
+  },
+  {
+    "id": "stop_area:OCE:SA:87441543",
+    "id_region": "admin:fr:18055",
+    "insee": "18055",
+    "label": "Civray-Grand-Entrevin (Ch\u00e2rost)",
+    "label_region": "Ch\u00e2rost (18290)",
+    "lat": "46.994372",
+    "lon": "2.117265",
+    "name": "Civray-Grand-Entrevin",
+    "region": "Ch\u00e2rost",
+    "timezone": "Europe/Paris",
+    "zip_code": "18290"
   },
   {
     "id": "stop_area:OCE:SA:87721746",
@@ -15086,6 +15093,14 @@
     "zip_code": "58800"
   },
   {
+    "id": "stop_area:OCE:SA:87716696",
+    "label": "Corcieux Le Conti",
+    "lat": "0",
+    "lon": "0",
+    "name": "Corcieux Le Conti",
+    "timezone": "Europe/Paris"
+  },
+  {
     "id": "stop_area:OCE:SA:87144196",
     "id_region": "admin:fr:88244",
     "insee": "88244",
@@ -15435,6 +15450,14 @@
     "zip_code": "11250"
   },
   {
+    "id": "stop_area:OCE:SA:87640755",
+    "label": "Couffoulens-Leuc-RD104",
+    "lat": "0",
+    "lon": "0",
+    "name": "Couffoulens-Leuc-RD104",
+    "timezone": "Europe/Paris"
+  },
+  {
     "id": "stop_area:OCE:SA:87116731",
     "id_region": "admin:fr:77413",
     "insee": "77413",
@@ -15617,6 +15640,19 @@
     "zip_code": "57530"
   },
   {
+    "id": "stop_area:OCE:SA:85001412",
+    "id_region": "admin:osm:1685588",
+    "insee": "",
+    "label": "Courchavon (Courchavon)",
+    "label_region": "Courchavon",
+    "lat": "47.439839",
+    "lon": "7.057592",
+    "name": "Courchavon",
+    "region": "Courchavon",
+    "timezone": "Europe/Paris",
+    "zip_code": ""
+  },
+  {
     "id": "stop_area:OCE:SA:87171710",
     "id_region": "admin:fr:51183",
     "insee": "51183",
@@ -15628,6 +15664,32 @@
     "region": "Courcy",
     "timezone": "Europe/Paris",
     "zip_code": "51220"
+  },
+  {
+    "id": "stop_area:OCE:SA:85001214",
+    "id_region": "admin:osm:2759181",
+    "insee": "",
+    "label": "Courfaivre (Haute-Sorne)",
+    "label_region": "Haute-Sorne",
+    "lat": "47.335404",
+    "lon": "7.291731",
+    "name": "Courfaivre",
+    "region": "Haute-Sorne",
+    "timezone": "Europe/Paris",
+    "zip_code": ""
+  },
+  {
+    "id": "stop_area:OCE:SA:85001255",
+    "id_region": "admin:osm:1685590",
+    "insee": "",
+    "label": "Courgenay (Courgenay)",
+    "label_region": "Courgenay (2950)",
+    "lat": "47.404904",
+    "lon": "7.124198",
+    "name": "Courgenay",
+    "region": "Courgenay",
+    "timezone": "Europe/Paris",
+    "zip_code": "2950"
   },
   {
     "id": "stop_area:OCE:SA:87271304",
@@ -15721,6 +15783,19 @@
     "zip_code": "28290"
   },
   {
+    "id": "stop_area:OCE:SA:85001271",
+    "id_region": "admin:osm:1685570",
+    "insee": "",
+    "label": "Courtemaiche (Basse-Allaine)",
+    "label_region": "Basse-Allaine",
+    "lat": "47.456237",
+    "lon": "7.055432",
+    "name": "Courtemaiche",
+    "region": "Basse-Allaine",
+    "timezone": "Europe/Paris",
+    "zip_code": ""
+  },
+  {
     "id": "stop_area:OCE:SA:87272112",
     "id_region": "admin:fr:60170",
     "insee": "60170",
@@ -15756,6 +15831,19 @@
     "lon": "3.264475",
     "name": "Courtrai/Kortrijk",
     "region": "Kortrijk",
+    "timezone": "Europe/Paris",
+    "zip_code": ""
+  },
+  {
+    "id": "stop_area:OCE:SA:85001206",
+    "id_region": "admin:osm:1685594",
+    "insee": "",
+    "label": "Court\u00e9telle (Court\u00e9telle)",
+    "label_region": "Court\u00e9telle",
+    "lat": "47.342912",
+    "lon": "7.317941",
+    "name": "Court\u00e9telle",
+    "region": "Court\u00e9telle",
     "timezone": "Europe/Paris",
     "zip_code": ""
   },
@@ -16977,6 +17065,19 @@
     "zip_code": "75001;75116"
   },
   {
+    "id": "stop_area:OCE:SA:87304626",
+    "id_region": "admin:fr:36063",
+    "insee": "36063",
+    "label": "Deols (D\u00e9ols)",
+    "label_region": "D\u00e9ols (36130)",
+    "lat": "46.826015",
+    "lon": "1.701317",
+    "name": "Deols",
+    "region": "D\u00e9ols",
+    "timezone": "Europe/Paris",
+    "zip_code": "36130"
+  },
+  {
     "id": "stop_area:OCE:SA:87297143",
     "id_region": "admin:fr:02261",
     "insee": "02261",
@@ -17295,6 +17396,19 @@
     "region": "Ding\u00e9",
     "timezone": "Europe/Paris",
     "zip_code": "35440"
+  },
+  {
+    "id": "stop_area:OCE:SA:87597047",
+    "id_region": "admin:fr:36065",
+    "insee": "36065",
+    "label": "Diou (Indre) (Diou)",
+    "label_region": "Diou (36260)",
+    "lat": "47.048114",
+    "lon": "2.023849",
+    "name": "Diou (Indre)",
+    "region": "Diou",
+    "timezone": "Europe/Paris",
+    "zip_code": "36260"
   },
   {
     "id": "stop_area:OCE:SA:87667980",
@@ -21697,19 +21811,6 @@
     "zip_code": "86360"
   },
   {
-    "id": "stop_area:OCE:SA:87171371",
-    "id_region": "admin:fr:02305",
-    "insee": "02305",
-    "label": "F\u00e8re-en-Tardenois (F\u00e8re-en-Tardenois)",
-    "label_region": "F\u00e8re-en-Tardenois (02130)",
-    "lat": "49.208558",
-    "lon": "3.504286",
-    "name": "F\u00e8re-en-Tardenois",
-    "region": "F\u00e8re-en-Tardenois",
-    "timezone": "Europe/Paris",
-    "zip_code": "02130"
-  },
-  {
     "id": "stop_area:OCE:SA:87413542",
     "id_region": "admin:fr:76259",
     "insee": "76259",
@@ -25708,6 +25809,32 @@
     "zip_code": "36100"
   },
   {
+    "id": "stop_area:OCE:SA:87643767",
+    "id_region": "admin:fr:36088",
+    "insee": "36088",
+    "label": "Issoudun-CHU (Issoudun)",
+    "label_region": "Issoudun (36100)",
+    "lat": "46.957805",
+    "lon": "1.996952",
+    "name": "Issoudun-CHU",
+    "region": "Issoudun",
+    "timezone": "Europe/Paris",
+    "zip_code": "36100"
+  },
+  {
+    "id": "stop_area:OCE:SA:87689935",
+    "id_region": "admin:fr:36088",
+    "insee": "36088",
+    "label": "Issoudun-Jardin (Issoudun)",
+    "label_region": "Issoudun (36100)",
+    "lat": "46.949684",
+    "lon": "1.994678",
+    "name": "Issoudun-Jardin",
+    "region": "Issoudun",
+    "timezone": "Europe/Paris",
+    "zip_code": "36100"
+  },
+  {
     "id": "stop_area:OCE:SA:87693457",
     "label": "Issoudun-L\u00e9trieix",
     "lat": "0",
@@ -28042,6 +28169,14 @@
     "region": "Saint-Samson-sur-Rance",
     "timezone": "Europe/Paris",
     "zip_code": "22100"
+  },
+  {
+    "id": "stop_area:OCE:SA:87716811",
+    "label": "La Houssi\u00e8re Van\u00e9mont Centre",
+    "lat": "0",
+    "lon": "0",
+    "name": "La Houssi\u00e8re Van\u00e9mont Centre",
+    "timezone": "Europe/Paris"
   },
   {
     "id": "stop_area:OCE:SA:87582635",
@@ -33415,6 +33550,14 @@
     "zip_code": "69620"
   },
   {
+    "id": "stop_area:OCE:SA:87640748",
+    "label": "Leuc-Foyer",
+    "lat": "0",
+    "lon": "0",
+    "name": "Leuc-Foyer",
+    "timezone": "Europe/Paris"
+  },
+  {
     "id": "stop_area:OCE:SA:87781088",
     "id_region": "admin:fr:11202",
     "insee": "11202",
@@ -35463,6 +35606,19 @@
     "zip_code": "70200"
   },
   {
+    "id": "stop_area:OCE:SA:87317701",
+    "id_region": "admin:fr:18134",
+    "insee": "18134",
+    "label": "Lury-sur-Arnon (Lury-sur-Arnon)",
+    "label_region": "Lury-sur-Arnon (18120)",
+    "lat": "47.127322",
+    "lon": "2.058344",
+    "name": "Lury-sur-Arnon",
+    "region": "Lury-sur-Arnon",
+    "timezone": "Europe/Paris",
+    "zip_code": "18120"
+  },
+  {
     "id": "stop_area:OCE:SA:87697516",
     "id_region": "admin:fr:26168",
     "insee": "26168",
@@ -36088,6 +36244,14 @@
     "region": "L\u00e9panges-sur-Vologne",
     "timezone": "Europe/Paris",
     "zip_code": "88600"
+  },
+  {
+    "id": "stop_area:OCE:SA:87716472",
+    "label": "L\u00e9panges/Vologne Poste",
+    "lat": "0",
+    "lon": "0",
+    "name": "L\u00e9panges/Vologne Poste",
+    "timezone": "Europe/Paris"
   },
   {
     "id": "stop_area:OCE:SA:87741439",
@@ -38472,6 +38636,19 @@
     "zip_code": "46090"
   },
   {
+    "id": "stop_area:OCE:SA:87309773",
+    "id_region": "admin:fr:18148",
+    "insee": "18148",
+    "label": "Mereau (M\u00e9reau)",
+    "label_region": "M\u00e9reau (18120)",
+    "lat": "47.162556",
+    "lon": "2.049799",
+    "name": "Mereau",
+    "region": "M\u00e9reau",
+    "timezone": "Europe/Paris",
+    "zip_code": "18120"
+  },
+  {
     "id": "stop_area:OCE:SA:87184408",
     "id_region": "admin:fr:90068",
     "insee": "90068",
@@ -39593,19 +39770,6 @@
     "zip_code": "66210"
   },
   {
-    "id": "stop_area:OCE:SA:87171355",
-    "id_region": "admin:fr:02520",
-    "insee": "02520",
-    "label": "Mont-Notre-Dame (Mont-Notre-Dame)",
-    "label_region": "Mont-Notre-Dame (02220)",
-    "lat": "49.296662",
-    "lon": "3.576558",
-    "name": "Mont-Notre-Dame",
-    "region": "Mont-Notre-Dame",
-    "timezone": "Europe/Paris",
-    "zip_code": "02220"
-  },
-  {
     "id": "stop_area:OCE:SA:87401901",
     "id_region": "admin:fr:76451",
     "insee": "76451",
@@ -40421,6 +40585,45 @@
     "region": "Bogny-sur-Meuse",
     "timezone": "Europe/Paris",
     "zip_code": "08120"
+  },
+  {
+    "id": "stop_area:OCE:SA:87689653",
+    "id_region": "admin:fr:36128",
+    "insee": "36128",
+    "label": "Montierchaume-Couturier (Montierchaume)",
+    "label_region": "Montierchaume (36130)",
+    "lat": "46.864135",
+    "lon": "1.77187",
+    "name": "Montierchaume-Couturier",
+    "region": "Montierchaume",
+    "timezone": "Europe/Paris",
+    "zip_code": "36130"
+  },
+  {
+    "id": "stop_area:OCE:SA:87643783",
+    "id_region": "admin:fr:36128",
+    "insee": "36128",
+    "label": "Montierchaume-Crevant (Montierchaume)",
+    "label_region": "Montierchaume (36130)",
+    "lat": "46.864461",
+    "lon": "1.792775",
+    "name": "Montierchaume-Crevant",
+    "region": "Montierchaume",
+    "timezone": "Europe/Paris",
+    "zip_code": "36130"
+  },
+  {
+    "id": "stop_area:OCE:SA:87643791",
+    "id_region": "admin:fr:36128",
+    "insee": "36128",
+    "label": "Montierchaume-Rosiers (Montierchaume)",
+    "label_region": "Montierchaume (36130)",
+    "lat": "46.844182",
+    "lon": "1.745448",
+    "name": "Montierchaume-Rosiers",
+    "region": "Montierchaume",
+    "timezone": "Europe/Paris",
+    "zip_code": "36130"
   },
   {
     "id": "stop_area:OCE:SA:87345306",
@@ -42876,19 +43079,6 @@
     "zip_code": "93360"
   },
   {
-    "id": "stop_area:OCE:SA:87116681",
-    "id_region": "admin:fr:02796",
-    "insee": "02796",
-    "label": "Neuilly-St-Front (Vichel-Nanteuil)",
-    "label_region": "Vichel-Nanteuil (02210)",
-    "lat": "49.18709",
-    "lon": "3.270765",
-    "name": "Neuilly-St-Front",
-    "region": "Vichel-Nanteuil",
-    "timezone": "Europe/Paris",
-    "zip_code": "02210"
-  },
-  {
     "id": "stop_area:OCE:SA:87712182",
     "id_region": "admin:fr:21452",
     "insee": "21452",
@@ -42913,6 +43103,19 @@
     "region": "Neuill\u00e9-Pont-Pierre",
     "timezone": "Europe/Paris",
     "zip_code": "37360"
+  },
+  {
+    "id": "stop_area:OCE:SA:87698605",
+    "id_region": "admin:fr:42156",
+    "insee": "42156",
+    "label": "Neulise (Neulise)",
+    "label_region": "Neulise (42590)",
+    "lat": "45.902661",
+    "lon": "4.180371",
+    "name": "Neulise",
+    "region": "Neulise",
+    "timezone": "Europe/Paris",
+    "zip_code": "42590"
   },
   {
     "id": "stop_area:OCE:SA:87645507",
@@ -43001,6 +43204,19 @@
     "lat": "46.882685",
     "lon": "1.862803",
     "name": "Neuvy-Pailloux",
+    "region": "Neuvy-Pailloux",
+    "timezone": "Europe/Paris",
+    "zip_code": "36100"
+  },
+  {
+    "id": "stop_area:OCE:SA:87310862",
+    "id_region": "admin:fr:36140",
+    "insee": "36140",
+    "label": "Neuvy-Pailloux-4-Routes (Neuvy-Pailloux)",
+    "label_region": "Neuvy-Pailloux (36100)",
+    "lat": "46.886653",
+    "lon": "1.858556",
+    "name": "Neuvy-Pailloux-4-Routes",
     "region": "Neuvy-Pailloux",
     "timezone": "Europe/Paris",
     "zip_code": "36100"
@@ -44803,19 +45019,6 @@
     "zip_code": "21600"
   },
   {
-    "id": "stop_area:OCE:SA:87116699",
-    "id_region": "admin:fr:02121",
-    "insee": "02121",
-    "label": "Oulchy-Br\u00e9ny (Breny)",
-    "label_region": "Breny (02210)",
-    "lat": "49.187628",
-    "lon": "3.352574",
-    "name": "Oulchy-Br\u00e9ny",
-    "region": "Breny",
-    "timezone": "Europe/Paris",
-    "zip_code": "02210"
-  },
-  {
     "id": "stop_area:OCE:SA:87722207",
     "id_region": "admin:fr:69149",
     "insee": "69149",
@@ -45922,6 +46125,19 @@
     "region": "\u00c9pinay-sur-Orge",
     "timezone": "Europe/Paris",
     "zip_code": "91360"
+  },
+  {
+    "id": "stop_area:OCE:SA:87465302",
+    "id_region": "admin:fr:64542",
+    "insee": "64542",
+    "label": "Peyran\u00e8re (Urdos)",
+    "label_region": "Urdos (64490)",
+    "lat": "42.803803",
+    "lon": "-0.547952",
+    "name": "Peyran\u00e8re",
+    "region": "Urdos",
+    "timezone": "Europe/Paris",
+    "zip_code": "64490"
   },
   {
     "id": "stop_area:OCE:SA:87672337",
@@ -48201,6 +48417,19 @@
     "region": "Prouvy",
     "timezone": "Europe/Paris",
     "zip_code": ""
+  },
+  {
+    "id": "stop_area:OCE:SA:87144345",
+    "id_region": "admin:fr:88361",
+    "insee": "88361",
+    "label": "Provench\u00e8res-sur-Fave (Provench\u00e8res-et-Colroy)",
+    "label_region": "Provench\u00e8res-et-Colroy (88490)",
+    "lat": "48.304632",
+    "lon": "7.08514",
+    "name": "Provench\u00e8res-sur-Fave",
+    "region": "Provench\u00e8res-et-Colroy",
+    "timezone": "Europe/Paris",
+    "zip_code": "88490"
   },
   {
     "id": "stop_area:OCE:SA:87116160",
@@ -51746,6 +51975,14 @@
     "zip_code": "37510"
   },
   {
+    "id": "stop_area:OCE:SA:87716449",
+    "label": "Saint-L\u00e9onard Centre",
+    "lat": "0",
+    "lon": "0",
+    "name": "Saint-L\u00e9onard Centre",
+    "timezone": "Europe/Paris"
+  },
+  {
     "id": "stop_area:OCE:SA:87240200",
     "id_region": "admin:fr:26322",
     "insee": "26322",
@@ -52082,6 +52319,19 @@
     "region": "Sanry-sur-Nied",
     "timezone": "Europe/Paris",
     "zip_code": "57530"
+  },
+  {
+    "id": "stop_area:OCE:SA:87465294",
+    "id_region": "admin:fr:64542",
+    "insee": "64542",
+    "label": "Sansanet (Urdos)",
+    "label_region": "Urdos (64490)",
+    "lat": "42.798426",
+    "lon": "-0.554006",
+    "name": "Sansanet",
+    "region": "Urdos",
+    "timezone": "Europe/Paris",
+    "zip_code": "64490"
   },
   {
     "id": "stop_area:OCE:SA:87713594",
@@ -54382,6 +54632,19 @@
     "region": "Saint-Quentin",
     "timezone": "Europe/Paris",
     "zip_code": "02100"
+  },
+  {
+    "id": "stop_area:OCE:SA:85001248",
+    "id_region": "admin:osm:1685583",
+    "insee": "",
+    "label": "St Ursanne (Clos du Doubs)",
+    "label_region": "Clos du Doubs (2882)",
+    "lat": "47.367777",
+    "lon": "7.165953",
+    "name": "St Ursanne",
+    "region": "Clos du Doubs",
+    "timezone": "Europe/Paris",
+    "zip_code": "2882"
   },
   {
     "id": "stop_area:OCE:SA:87783480",
@@ -59682,6 +59945,19 @@
     "zip_code": ""
   },
   {
+    "id": "stop_area:OCE:SA:87487264",
+    "id_region": "admin:fr:18255",
+    "insee": "18255",
+    "label": "Subdray-Lyc\u00e9e-Agricole (Le Subdray)",
+    "label_region": "Le Subdray (18570)",
+    "lat": "47.021751",
+    "lon": "2.293587",
+    "name": "Subdray-Lyc\u00e9e-Agricole",
+    "region": "Le Subdray",
+    "timezone": "Europe/Paris",
+    "zip_code": "18570"
+  },
+  {
     "id": "stop_area:OCE:SA:87758193",
     "id_region": "admin:fr:94071",
     "insee": "94071",
@@ -63894,6 +64170,14 @@
     "zip_code": "11250"
   },
   {
+    "id": "stop_area:OCE:SA:87640730",
+    "label": "Verzeille-Rte-de-St-Hil",
+    "lat": "0",
+    "lon": "0",
+    "name": "Verzeille-Rte-de-St-Hil",
+    "timezone": "Europe/Paris"
+  },
+  {
     "id": "stop_area:OCE:SA:87280008",
     "id_region": "admin:fr:52518",
     "insee": "52518",
@@ -64295,19 +64579,6 @@
     "region": "Vierzy",
     "timezone": "Europe/Paris",
     "zip_code": "02210"
-  },
-  {
-    "id": "stop_area:OCE:SA:87645119",
-    "id_region": "admin:fr:15088",
-    "insee": "15088",
-    "label": "Viescamp-sous-Jall\u00e8s (Lacapelle-Viescamp)",
-    "label_region": "Lacapelle-Viescamp (15150)",
-    "lat": "44.918818",
-    "lon": "2.290016",
-    "name": "Viescamp-sous-Jall\u00e8s",
-    "region": "Lacapelle-Viescamp",
-    "timezone": "Europe/Paris",
-    "zip_code": "15150"
   },
   {
     "id": "stop_area:OCE:SA:87182550",
@@ -67051,14 +67322,6 @@
     "lat": "0",
     "lon": "0",
     "name": "Z\u00e9nith Parc Expo",
-    "timezone": "Europe/Paris"
-  },
-  {
-    "id": "stop_area:OCE:SA:87757005",
-    "label": "_",
-    "lat": "0",
-    "lon": "0",
-    "name": "_",
     "timezone": "Europe/Paris"
   }
 ]

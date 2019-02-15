@@ -173,5 +173,4 @@ def get_departures_time(station_start, station_end, date):
 
 
 if __name__ == "__main__":
-    res = get_departures_time("zerze", "fzefze", "2019-01-30 12:00")
-    print(res)
+    get_all_station()
